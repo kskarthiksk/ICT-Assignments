@@ -45,3 +45,6 @@ def promotion_status():
     else:
         out = "You have a low chance of getting promoted"
     return render_template('promotion_status.html', promotion_status = out)
+
+if __name__ == '__main__':
+    app.run(debug= True)
